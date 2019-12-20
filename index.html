@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Poetry Room</title>
+
+	<style type="text/css">
+		@font-face { font-family: 'RIDIBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+		@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,300,400,500,600,700,900&display=swap&subset=korean');
+
+
+		
+		h1 {font-size: 43pt; color: white; 
+				font-family: 'Noto Serif KR', serif;
+				text-align: center;
+				margin-top: 5%; margin-bottom: 100px;
+				font-weight: 500;}
+
+				
+		h3 {position: center; 
+				font-family: 'RIDIBatang';font-weight: normal; font-style: normal;text-align: center;
+				margin-bottom: 0}
+
+		body, html {margin: 0px; padding: 0;}
+		body, html {height: 100%, margin: auto; overflow: hidden;}
+
+		body{background-image: url("30.gif"); height: 110vh; background-position: center; background-repeat: no-repeat; background-size: cover;}
+
+
+		.night {position: absolute; z-index: 99; margin-left: 20%}
+		.day {position: absolute; z-index: 98; color: black;}
+
+		.container{display: flex; flex-grow: 1; justify-content: space-around; margin-top: 80px}
+		.item{}
+
+	</style>
+
+</head>
+
+<body>
+	
+	<!--<button type="button" onclick="myFuntion()">바꾸기</button>-->
+	<div>
+	<input type="image" src="moon.png" width="30" onclick="myFuntion1()" class="night" style="margin-left: 8%; margin-top: 3%">
+	</div>
+
+	<div>
+	<input type="image" src="sun3.png" width="30" onclick="myFuntion2()" class="day" style="margin-left: 5%; margin-top: 3%">
+	</div>
+
+
+
+	<div id="main">
+		<div>
+			<h1 id="title">시  방</h1>
+		</div>
+		<div  class="container">
+
+		
+
+
+		<div id="SecondDoor"  class="item">
+			<a href="./door2/index.html" target="_blank">
+				<img src="door12_1.png" id="door4" style="
+					cursor: pointer; 
+					height: 530px;
+					top: 12.5vh;">
+			</a>
+		</div>
+
+
+
+		<div id="thirdDoor"class="item">
+			<a href="./door3/index.html" target="_blank">
+				<img src="door7.png" id="door1" style="
+					cursor: pointer; 
+					height: 530px;
+					top: 12.5vh;">
+			</a>
+		</div>
+
+
+		<div id="fourthDoor" class="item">
+			<a href="./door4/index.html" target="_blank">
+				<img src="door15_1.png" id="door1" style="
+					cursor: pointer; 
+					height: 530px;
+					top: 12.5vh;">
+			</a>
+		</div>
+
+
+		<div id="fifthDoor" class="item">
+			<a href="./door5/index.html" target="_blank">
+				<img src="door16.png" id="door1" style="
+					cursor: pointer;
+					height: 530px;
+					top: 12.5vh;">
+			</a>
+		</div>
+
+		</div>
+
+
+	
+
+	</div>
+
+	<script type="text/javascript">
+		function myFuntion1(){
+			document.body.style.backgroundImage = "url('30.gif')"
+			title.style.color = "white";
+		}
+		
+
+		function myFuntion2(){
+			document.body.style.backgroundImage = "url('3.webp')"
+			title.style.color = "gray";
+		}
+
+
+
+
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Home</title>
+	<style type="text/css">
+
+		@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,300,400,500,600,700,900&display=swap&subset=korean');
+
+		body{background-image: url(back5.gif); background-repeat: no-repeat; background-size: cover;}
+		h2 {color:white; text-shadow: 10; line-height: 1.8; size: 12pt; font-family: 'Noto Serif KR', serif; font-weight: 400; letter-spacing: -0.02em}
+		h3 {color:white; text-shadow: 10; line-height: 1.8; size: 8pt; font-family: 'Noto Serif KR', serif; font-weight: 400; letter-spacing: -0.02em}
+
+		.aaa {display: flex; flex-grow: 1; justify-content: space-around; margin-top:550px}
+      
+    </style>
+<body>
+	<div class="aaa">
+	<h2>
+		이바루<br>
+		외따로 와 지나는 사람 없으니<br>
+		밤 자고 가자 하며 나는 앉어라.
+	</h2>
+
+	<h2>
+		저 멀리, 하느편(便)에<br>
+		배는 떠나 나가는<br>
+		노래 들리며
+	</h2>
+
+	<h2>
+		눈물은<br>
+		흘러나려라<br>
+		스르르 내려 감는 눈에.
+	</h2>
+
+
+	<h2>
+		꿈에도 생시에도 눈에 선한 우리 집<br>
+		또 저 산(山) 넘어 넘어<br>
+		구름은 가라.
+	</h2>
+
+	<h3><br><br><br><br>김정식 - 우리집</h3>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<img src="mou.png" style="width:100%;height: 30vh; bottom: 0px;position:absolute; left: 0px">
+
+
+
+
+    <img src="cl1.png" class="drag"  style="width:15%; top:450px;  left: 50px;position:absolute;">
+   
+    <img src="cl4.png" class="drag"  style="width:18%; top:465px; left: 510px;position:absolute;">
+    
+	  
+	   <img src="cl6.png" class="drag"  style="width:18%; height: 300px; top:450px;left: 210px; position:absolute;">
+	   <img src="moon.png" class="drag"  style="width:13%; bottom:270px;left:380px; position:absolute;">
+	    <img src="cl2.png" class="drag"  style="width:18%;left: 130px; top:470px; position:absolute;">
+	    <img src="cl5.png" class="drag"  style="width:18%; bottom: 250px; left:400px; position:absolute;">
+
+    
+<img src="mom.png" class="drag" style="width:13%;bottom:180px;right:590px; position:absolute;">
+	<img src="dad.png" class="drag"  style="width:12%;bottom:200px;right:410px; position:absolute;">
+	
+	
+	<img src="sis.png" class="drag"  style="width:13%;bottom:230px;right:220px; position:absolute;">	
+	<img src="me.png" class="drag"  style="width:11.5%;bottom:210px;right:40px; position:absolute;">
+	
+
+ 	<script type="text/javascript">
+
+	//스티커 드래그 앤 드롭
+	(function(){
+		var d = false;
+		var target,dx,dy;
+		var t = document.getElementsByClassName("drag");
+		for(var i=0; i<t.length; i++){
+			t[i].style.display = "block";
+			t[i].style.position = "absolute";
+			t[i].style.cursor = "pointer";
+			t[i].ondragstart = function(e){e.preventDefault();};
+			t[i].onmousedown = function(e){ d = true; dx = e.offsetX; dy = e.offsetY; target = e.target;}
+			t[i].onmouseup = function(){ d = false;}
+			window.onmousemove = function(e){ 
+				if(d){ target.style.left = (e.clientX - dx) + "px";
+					target.style.top = (e.clientY - dy) + "px";}
+			}
+		}
+	})();
+
+
+ alert("\n\n\n그림을 완성해줘.\n(Drag and Drop)\n\n");
+
+
+	
+
+
+
+
+
+
+
+
+
+	</script>
+
+
+</body>

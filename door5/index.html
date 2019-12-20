@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spring</title>
+	<style type="text/css">
+@font-face { font-family: 'RIDIBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
+		body{background-image: url(back.gif); background-repeat: no-repeat; background-size: cover;}
+		h2 {color:white; text-shadow: 10; line-height: 1.8; size: 12pt; font-family: 'RIDIBatang'; font-weight: 400; letter-spacing: -0.02em; text-align: center;}
+		h3 {color:white; text-shadow: 10; line-height: 1.8; size: 8pt;font-family: 'RIDIBatang'; font-weight: 400; letter-spacing: -0.02em; text-align: center;}
+
+		.aaa {display: flex; flex-grow: 1; justify-content: space-around; margin-top:550px; z-index: 10000}
+      
+      	.cup {margin-left: 220px; top: 450px; position: absolute;z-index: 999}
+      	.tray {position: absolute; right: 100px; z-index: 900; top: 100px}
+    </style>
+<body>
+
+	
+
+	
+	
+
+    <img src="2.gif" class="drag"  style="width:18%; top:80px;  left: 780px;position:absolute;
+    z-index: 1000">
+   
+   <img src="1.gif" class="drag"  style="width:30%; top:110px;  left: 800px;position:absolute; z-index: 1000">
+    <img src="3.gif" class="drag"  style="width:18%; top:60px; left: 1000px; position:absolute;z-index: 1000">
+    
+    
+
+    <img src="5.gif" class="drag"  style="width:18%; top:60px;  left: 1150px;position:absolute;
+    z-index: 1000">
+   
+    <img src="6.gif" class="drag"  style="width:13%; top:250px; left: 1150px; position:absolute;z-index: 1000">
+
+
+	  <img src="4.gif" class="drag"  style="width:30%; top:40px;  left: 1160px;position:absolute; z-index: 1000">
+	  <div class="cup">
+		<img src="cup.png" style="width: 300px;">
+	</div>
+
+	
+	
+
+
+	<div style="position: absolute; z-index: 999; right: 550px; top: 150px">
+	<h2>
+		구비진 돌담을 돌아서 돌아서<br>
+		달이 흐른다 놀이 흐른다<br>
+		하이얀 그림자<br>
+		은실을 즈르르 몰아서<br>
+		꿈밭에 봄마음 가고 가고 또 간다
+	</h2>
+
+
+	<h3>김윤식 - 꿈밭에 봄 마음</h3>
+</div>
+<div class="tray">
+		<img src="tray.png" style=" width: 1200px; height: 800px">
+	</div>
+
+ 	<script type="text/javascript">
+
+	//스티커 드래그 앤 드롭
+	(function(){
+		var d = false;
+		var target,dx,dy;
+		var t = document.getElementsByClassName("drag");
+		for(var i=0; i<t.length; i++){
+			t[i].style.display = "block";
+			t[i].style.position = "absolute";
+			t[i].style.cursor = "pointer";
+			t[i].ondragstart = function(e){e.preventDefault();};
+			t[i].onmousedown = function(e){ d = true; dx = e.offsetX; dy = e.offsetY; target = e.target;}
+			t[i].onmouseup = function(){ d = false;}
+			window.onmousemove = function(e){ 
+				if(d){ target.style.left = (e.clientX - dx) + "px";
+					target.style.top = (e.clientY - dy) + "px";}
+			}
+		}
+	})();
+
+
+ alert("\n\n\n꽃을 움직여 봐.\n\n");
+
+
+	
+
+
+
+
+
+
+
+
+
+	</script>
+
+
+</body>
